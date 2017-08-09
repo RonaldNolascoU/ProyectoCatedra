@@ -23,14 +23,14 @@ switch(opc){
              suma=(suma+notas[i]*UV1[i]);
          }
             div=suma/sumaUV;
-            document.write("<h1>CUM: "+div+"</h1>");
+            document.write("<tr><td>CUM:</td><td>"+div+"</td></tr>");
         break;
     case 2:
            var notas=Number(prompt("Ingrese la nota de Humanística II"));
         document.write("<tr><td>Humanística II</td><td>3</td><td>"+notas+"</td></tr>");
             suma=(suma+notas*3);
             div=suma/3;
-         document.write("<h1>CUM: "+div+"</h1>");
+         document.write("<tr><td>CUM:</td><td>"+div+"</td></tr>");
         break;
     case 3:
             for(var i=1;i<6;i++){
@@ -43,7 +43,7 @@ switch(opc){
              suma=(suma+notas[i]*UV2[i]);
          }
             div=suma/sumaUV;
-            document.write("<h1>CUM: "+div+"</h1>");
+            document.write("<tr><td>CUM:</td><td>"+div+"</td></tr>");
         
         break;
     default:
