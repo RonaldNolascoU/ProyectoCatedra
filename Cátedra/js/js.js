@@ -51,3 +51,9 @@ switch(opc){
         break;
           }
 
+ //Desarrolladores: 
+ //Nolasco Umanzor, Ronald Alexander #10
+ //Ramírez Juárez, Sergio Norberto #16
+  
+  //Trabajo LIC - 2017
+
