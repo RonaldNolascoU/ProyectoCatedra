@@ -1,0 +1,240 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/*----------------Fuentes----------------*/
+@font-face{
+    font-family: "PresideBold";
+    src: url(../fonts/PresideBold.ttf);
+}
+@font-face{
+    font-family: "Anisha";
+    src: url(../fonts/Anisha.otf);
+}
+/*-----------------Cuerpo-----------------*/
+body{
+    font-family: "Century Gothic";
+    background-image: url(../img/5.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+}
+ nav{
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+ nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 15px;
+    font-size: 1.2em;
+ }
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+}
+
+nav ul li a:before{
+    content: "";
+    width: 0px;
+    height: 3px;
+    background-color:#fff;
+    position: absolute;
+    top: 110%;
+    left: 0;
+    transition: 0.5s;
+}
+nav ul li:hover a:before{
+    width: 100%;
+}
+
+.logo{
+    font-family: "PresideBold";
+    font-size: 2em;
+}
+.logo a:before{
+    content: "";
+    width: 0px;
+    height: 0px;
+    background-color:#fff;
+    position: absolute;
+    top: 110%;
+    left: 0;
+    transition: 0.5s;
+}
+.logo:hover a:before{
+    width: 0%;
+}
+/*-----------------Ubicacion-----------------*/
+.aqui a:before{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color:#fff;
+    position: absolute;
+    top: 110%;
+    left: 0;
+    transition: 0.5s;
+}
+/*-----------------Contenedor-----------------*/
+.contenedor{
+   /* background-color: rgba(0,0,0,0.8);*/
+    background-color: rgba(237, 214, 146, 0.9);
+    width: 70%;
+    margin-top: 5%;
+    padding: 15px;
+    box-sizing: border-box;
+    float: left;
+    margin-left: 15%;
+}
+.contenedor .dinero {
+    background-color: #6797A1;
+    width: 40%;
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-bottom: 5%;
+    color: #fff;
+}
+.contenedor .contenido{
+    padding: 15px;
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+}
+.contenido h2{
+    text-align: center;
+    margin-bottom: 5%;
+}
+.inn{
+    padding: 8px;
+    border: 2px solid #6797A1;
+    background-color: transparent;
+    width: 60%;
+    display: block;
+    margin: auto;
+    font-family: "Century Gothic";
+    color: #000;
+}
+.envio{
+    background-color: rgba(48, 82, 116, 0.8);
+    border: none;
+    padding: 8px;
+    font-size: 1em;
+    width: 35%;
+    display: block;
+    margin: auto;
+    color: #fff;
+    transition: 0.5s ease-out;
+}
+.envio:hover{
+    background-color: rgba(48, 114, 237, 0.7);
+
+}
+/*----------------Derecha----------------*/
+.contenedor .contenido2{
+    padding: 15px;
+    box-sizing: border-box;
+    width: 50%;
+    float: right;
+}
+.contenido2 h2{
+    text-align: center;
+    margin-bottom: 5%;
+}
+.inn{
+    padding: 8px;
+    border: 2px solid #6797A1;
+    background-color: transparent;
+    width: 60%;
+    display: block;
+    margin: auto;
+    font-family: "Century Gothic";
+}
+.envio{
+    background-color: rgba(48, 82, 116, 0.8);
+    border: none;
+    padding: 8px;
+    font-size: 1em;
+    width: 35%;
+    display: block;
+    margin: auto;
+    color: #fff;
+    transition: 0.5s ease-out;
+}
+.envio:hover{
+    background-color: rgba(48, 114, 237, 0.7);
+
+}
+.inn2{
+    float: left;
+    padding: 8px;
+    border: 2px solid #6797A1;
+    background-color: transparent;
+    width: 40%;
+    display: block;
+    margin: auto;
+    font-family: "Century Gothic";
+    color: #000;
+    margin-bottom: 4%;
+}
+.inn22{
+    float: left;
+    padding: 8px;
+    border: 2px solid #6797A1;
+    background-color: transparent;
+    width: 40%;
+    display: block;
+    margin: auto;
+    font-family: "Century Gothic";
+    color: #000;
+    margin-right: 5%;
+}
+.inn_2{
+    float: right;
+    padding: 8px;
+    border: 2px solid #6797A1;
+    background-color: transparent;
+    width: 40%;
+    display: block;
+    margin: auto;
+    font-family: "Century Gothic";
+    color: #000;
+    margin-right: 5.5%;
+    margin-top: -5%;
+}
+.envio2{
+    background-color: rgba(48, 82, 116, 0.8);
+    border: none;
+    padding: 8px;
+    font-size: 1em;
+    width: 35%;
+    display: block;
+    margin: auto;
+    color: #fff;
+    transition: 0.5s ease-out;
+    margin-top: 10%;
+    margin-top: 1%;
+}
+.envio2:hover{
+    background-color: rgba(48, 114, 237, 0.7);
+
+}
+.sub{
+    margin-top: 10%;
+    color: #6797A1;
+}
+
+
+
+
+
+
+
+
+

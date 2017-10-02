@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cuentas</title>
+    <link rel="stylesheet" href="../css/estilo_cuenta.css">
+</head>
+<body>
+  
+  <header>
+      <nav>
+       <ul>
+           <li class="logo">
+               <a href="../html/e-wallet.html">e-Wallet</a>
+           </li>
+           <li class="aqui">
+               <a href="../html/Cuentas.html">Cuentas</a>
+           </li>
+           <li>
+               <a href="../html/Ingresos.html">Ingresos</a>
+           </li>
+           <li>
+               <a href="../html/Gastos.html">Gastos</a>
+           </li>
+           <li>
+               <a href="../html/Configuracion.html">Configuración</a>
+           </li>
+           <li>
+               <a href="../html/Estadisticas.html">Estadísticas</a>
+           </li>
+       </ul>
+   </nav>
+  </header>
+   
+    <section class="contenedor">
+    
+     <section class="dinero">
+        <h2>Efectivo:</h2><p></p>
+     </section>
+     
+     <section class="contenido">
+         <h2>Cuentas</h2>
+         <input type="text" name="banco" placeholder="Banco" required class="inn">
+         <br>
+         <input type="text" name="num_cuenta" placeholder="N° de Cuenta" required class="inn">
+         <br>
+         <input type="text" name="saldo" placeholder="Saldo Actual" required class="inn">
+         <br>
+         <br>
+         <input type="button" id="btn_c" name="btn_c" value="ACEPTAR" required class="envio">
+         <br>
+         
+     </section>
+     <section class="contenido2">
+          <h2>Targetas</h2>
+         <input type="text" name="banco" placeholder="Banco" required class="inn22">
+         <input type="text" name="num_cuenta" placeholder="N° de targeta" required class="inn2">
+         <br>
+         <input type="text" name="saldo" placeholder="Saldo Actual" required class="inn22">
+         <input type="text" name="saldo" placeholder="% Anual" required class="inn2">
+         <br>
+         <br>
+         <h4 class="sub">Fecha de vencimiento:</h4>
+         <input type="date" name="fechanacimiento" placeholder="Fecha de Nacimiento" class="inn_2">
+         <br>
+         <br>
+         <br>
+         <input type="button" id="btn_t" name="btn_t" value="ACEPTAR" required class="envio2">
+         <br>
+         
+     </section>
+      
+  </section>
+   
+    
+</body>
+</html>

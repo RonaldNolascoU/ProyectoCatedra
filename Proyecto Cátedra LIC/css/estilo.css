@@ -1,0 +1,267 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*-----------------Cuerpo-----------------*/
+body{
+    font-family: "Century Gothic";
+    background-image: url(../img/1.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+}
+
+header{
+    font-size: 3.2em;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: "PresideBold";
+    padding: 5px;
+    box-sizing: border-box;
+}
+/*----------------Fuentes----------------*/
+@font-face{
+    font-family: "PresideBold";
+    src: url(../fonts/PresideBold.ttf);
+}
+@font-face{
+    font-family: "Anisha";
+    src: url(../fonts/Anisha.otf);
+}
+/*-----------------Login-----------------*/
+.login{
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 350px;
+    height: 480px;
+    display: block;
+    margin: auto;
+    margin-top: 5%;
+    float: left;
+    margin-left: 13%;
+    margin-right: 5%;
+    
+}
+.tema{
+    font-family: "PresideBold";
+    font-size: 3em;
+    text-align: center;
+    color: #fff;
+    padding: 15px;
+    box-sizing: border-box;
+}
+/*-----------------Formulario-----------------*/
+form{
+    margin-top: 5%;
+}
+.ingreso{
+    
+    background-color: transparent;
+    color: #fff;
+    padding: 8px;
+    box-sizing: border-box;
+    display: block;
+    margin: auto;
+    font-size: 1.1em;
+    transition: 0.5s ease-out;
+}
+.envio{
+    background-color: rgba(48, 82, 116, 0.8);
+    border: none;
+    padding: 8px;
+    font-size: 1em;
+    width: 35%;
+    display: block;
+    margin: auto;
+    color: #fff;
+    transition: 0.5s ease-out;
+}
+.envio1{
+    background-color: rgba(48, 82, 116, 0.8);
+    border: none;
+    padding: 8px;
+    font-size: 1em;
+    width: 55%;
+    display: block;
+    margin: auto;
+    color: #fff;
+    transition: 0.5s ease-out;
+   
+}
+
+.none{
+    margin-left: 16%;
+    font-size: 0.8em;
+    text-decoration: none;
+    color: #fff;
+    
+}
+#A{
+    color:white;
+}
+#question{
+    color:white;
+}
+.envio:hover{
+    background-color: rgba(48, 114, 237, 0.7);
+
+}
+.envio1:hover{
+    background-color: rgba(48, 114, 237, 0.7);
+
+}
+.imagen{
+    width: 35%;
+    display: block;
+    margin: auto;
+}
+
+
+/*--------------------Registrar--------------------*/
+.login_2{
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 570px;
+    height: 1130px;
+    display: block;
+    margin: auto;
+    margin-top: 5%;
+    float: left;
+    
+}
+.tema_2{
+    font-family: "PresideBold";
+    font-size: 3em;
+    text-align: center;
+    color: #fff;
+    padding: 15px;
+    box-sizing: border-box;
+}
+/*-----------------Formulario-----------------*/
+form{
+    margin-top: 5%;
+}
+
+.ingreso_2{
+    
+    background-color: transparent;
+    color: #fff;
+    padding: 8px;
+    box-sizing: border-box;
+    font-size: 1.1em;
+    transition: 0.5s ease-out;
+}
+.envio_2{
+    background-color: rgba(48, 82, 116, 0.8);
+    border: none;
+    padding: 8px;
+    font-size: 1em;
+    width: 35%;
+    display: block;
+    margin: auto;
+    color: #fff;
+    transition: 0.5s ease-out;
+}
+.none_2{
+    margin-left: 16%;
+    font-size: 0.8em;
+    text-decoration: none;
+    color: #fff;
+    
+}
+.envio_2:hover{
+    background-color: rgba(48, 114, 237, 0.7);
+
+}
+.imagen_2{
+    width: 35%;
+    display: block;
+    margin: auto;
+}
+
+
+/*-----------------------Ubicaciones-----------------------*/
+.contenido_2 .general{
+    float: left;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.contenido_2 .seguridad{
+    float: left;
+    margin-right: 5%;
+}
+
+
+/*-------------------Ventana Modal-------------------*/
+
+#popup, #popup2 {
+   visibility: hidden;
+   opacity: 0;
+   margin-top: -300px;
+}
+#popup:target, #popup2:target {
+   visibility:visible;
+   opacity: 1;
+   background-color: rgba(0,0,0,0.9);
+   position: fixed;
+   top:0;
+   left:0;
+   right:0;
+   bottom:0;
+   margin:0;
+   z-index: 999;
+   transition:all 1s;
+}
+.popup-link, .popup-link2{
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+.popup-contenedor h1{
+    text-align: center;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    color: #fff;
+    font-family: "PresideBold";
+    font-size: 3em;
+}
+.popup-contenedor {
+   position: relative;
+   margin:15% auto;
+   padding:15px;
+   box-sizing: border-box;
+   background-color: #032E46;
+   color:#333;
+   border-radius: 3px;
+   width:40%;
+}
+.popup-contenedor p{
+    text-align: center;
+    color: #fff;
+}
+a.popup-cerrar {
+   position: absolute;
+   top:3px;
+   right:3px;
+   background-color: #23B684;
+   padding:7px 10px;
+   font-size: 20px;
+   text-decoration: none;
+   line-height: 1;
+   color:#000;
+}
+.envm{
+    background-color: rgba(48, 82, 116, 0.8);
+    border: none;
+    padding: 8px;
+    font-size: 1em;
+    width: 47%;
+    color: #fff;
+    transition: 0.5s ease-out;
+    margin-left: 26.5%;
+    margin-bottom: 3%;
+   
+}

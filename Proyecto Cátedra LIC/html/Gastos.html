@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Gastos</title>
+    <link rel="stylesheet" href="../css/estilo_gastos.css">
+</head>
+<body>
+  
+   <header>
+      <nav>
+       <ul>
+           <li class="logo">
+               <a href="../html/e-wallet.html">e-Wallet</a>
+           </li>
+           <li>
+               <a href="../html/Cuentas.html">Cuentas</a>
+           </li>
+           <li>
+               <a href="../html/Ingresos.html">Ingresos</a>
+           </li>
+           <li class="aqui">
+               <a href="../html/Gastos.html">Gastos</a>
+           </li>
+           <li>
+               <a href="../html/Configuracion.html">Configuración</a>
+           </li>
+           <li>
+               <a href="../html/Estadisticas.html">Estadísticas</a>
+           </li>
+       </ul>
+   </nav>
+  </header>
+  
+  
+   <section class="contenedor">
+     
+     <section class="contenido">
+        
+         <h1>Gastos</h1>
+         <input type="date" name="fecha" placeholder="Fecha" class="inn">
+         <br>
+         <select class="inn_m">
+            <option value="">Motivo</option>
+            <option value="mot1">Pago de celular </option>
+            <option value="mot2">Pago de luz eléctrica </option>
+            <option value="mot3">Pago de agua </option>
+            <option value="mot4">Pago de casa/alquiler </option>
+            <option value="mot5">Pago de cable </option>
+            <option value="mot6">Pago de internet</option>
+            <option value="mot7">Pago de educación</option>
+            <option value="mot8">Supermercado</option>
+            <option value="mot9">Cine</option>
+            <option value="mot10">Discoteca</option>
+            <option value="mot11">Teatro</option>
+            <option value="mot12">Ropa</option>
+            <option value="mot13">Restaurante</option>
+            <option value="mot14">Tecnología</option>
+            <option value="mot15">Mascota</option>
+            <option value="mot16">Gasolina</option>
+            <option value="mot17">Reparaciones</option>
+         </select>
+         <br>
+         <input type="text" name="monto" placeholder="Monto" required class="inn">
+         <br>
+         <input type="text" name="cuenta" placeholder="Cuenta" required class="inn">
+         <br>
+         <br>
+         <input type="button" id="logeo" name="Iniciar" value="ACEPTAR" required class="envio">
+         <br>
+         
+     </section>
+      
+  </section>
+   
+    
+</body>
+</html>
