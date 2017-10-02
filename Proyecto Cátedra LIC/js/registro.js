@@ -1,4 +1,8 @@
+//VARIABLES
+//VARIABLE CONTADOR
 var contador = 0;
+
+//VARIABLES PARA GUARDAR DATOS
 var arraynombre = new Array();
 var arrayapellido = new Array();
 var arraycorreo = new Array();
@@ -8,21 +12,23 @@ var arraydepartamento = new Array();
 var arraymunicipio = new Array();
 var arraycolonia = new Array();
 var arraycalle = new Array();
-var arraycasa=new Array();
-var arraypreguntas=new Array();
-var arrayDUI=new Array();
-var arrayNIT=new Array();
-var arraycel=new Array();
-var arrayfecha=new Array();
-var random=0;
-var id=0;
+var arraycasa = new Array();
+var arraypreguntas = new Array();
+var arrayDUI = new Array();
+var arrayNIT = new Array();
+var arraycel = new Array();
+var arrayfecha = new Array();
+var random = 0;
+var id = 0;
 
+//FUNCIÓN INICIAR
 function iniciar() {
+    //INSTANCIA DEL OBJETO
     var Registro = new wallet();
     document.getElementById("enviar").addEventListener("click", function () {
-var bandera = true;
-var respuesta = "";
-
+        var bandera = true;
+        var respuesta = "";
+        //OBTENCIÓN DE VALORES INTRODUCIDOS
         var nombre = document.registro.nombre.value;
         var apellido = document.registro.apellido.value;
         var email = document.registro.correo.value;
@@ -42,20 +48,20 @@ var respuesta = "";
         var NIT = document.registro.NIT.value;
         var celular = document.registro.celular.value;
         var fecha_nacimiento = document.registro.fechanacimiento.value;
-    
 
-        
+
+        //EXPRESIONES REGULARES
 
         var rgxnombre = /^([A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]+[\s]*)+$/;
         var rgxapellido = /^([A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]+[\s]*)+$/;
         var rgxcorreo = /^[a-z][\w.-]+@\w[\w.-]+\.[\w.-]*[a-z][a-z]$/i;
         var rgxclave = /^(?=.*\d)(?=.*[\u0021-\u002b\u003c-\u0040])(?=.*[A-Z])(?=.*[a-z])\S{8,16}$/;
-var rgxdui=/^\d{8}\-\d{1}$/;
-        var rgxnit=/^\d{4}\-\d{6}\-\d{3}\-\d{1}$/;
-        var rgxcel=/^[67]{1}\d{3}-\d{4}$/;
+        var rgxdui = /^\d{8}\-\d{1}$/;
+        var rgxnit = /^\d{4}\-\d{6}\-\d{3}\-\d{1}$/;
+        var rgxcel = /^[67]{1}\d{3}-\d{4}$/;
 
 
-
+        //VALIDACIÓN DE EXPRESIONES REGULARES
 
         if (!rgxnombre.test(nombre)) {
             bandera = false;
@@ -97,202 +103,193 @@ var rgxdui=/^\d{8}\-\d{1}$/;
             bandera = false;
             respuesta = "casa";
         }
-        if(!rgxnombre.test(p1)){
+        if (!rgxnombre.test(p1)) {
             bandera = false;
             respuesta = "pregunta de seguridad 1";
         }
-         if(!rgxnombre.test(p2)){
+        if (!rgxnombre.test(p2)) {
             bandera = false;
-               respuesta = "pregunta de seguridad 2";
+            respuesta = "pregunta de seguridad 2";
         }
-         if(!rgxnombre.test(p3)){
+        if (!rgxnombre.test(p3)) {
             bandera = false;
-                 respuesta = "pregunta de seguridad 3";
+            respuesta = "pregunta de seguridad 3";
         }
-         if(!rgxnombre.test(p4)){
+        if (!rgxnombre.test(p4)) {
             bandera = false;
-                 respuesta = "pregunta de seguridad 4";
+            respuesta = "pregunta de seguridad 4";
         }
-         if(!rgxapellido.test(p5)){
+        if (!rgxapellido.test(p5)) {
             bandera = false;
-                 respuesta = "pregunta de seguridad 5";
+            respuesta = "pregunta de seguridad 5";
         }
-         if(!rgxdui.test(DUI)){
+        if (!rgxdui.test(DUI)) {
             bandera = false;
-                 respuesta = "DUI";
+            respuesta = "DUI";
         }
-         if(!rgxnit.test(NIT)){
+        if (!rgxnit.test(NIT)) {
             bandera = false;
             respuesta = "NIT";
         }
-         if(!rgxcel.test(celular)){
+        if (!rgxcel.test(celular)) {
             bandera = false;
             respuesta = "número de celular";
         }
-         if(fecha_nacimiento.length=0){
+        if (fecha_nacimiento.length = 0) {
             bandera = false;
             respuesta = "fecha de nacimiento";
         }
-
+        //DATOS INCORRECTOS
         if (!bandera) {
             alert("Revise el dato: " + respuesta);
-
+            //DATOS CORRECTOS
         } else {
-            for(i=0;i<=contador-1;i++){
-                if(email==arraycorreo[i]){
+            //VERIFICAR SI CORREO ELECTRÓNICO EXISTE
+            for (i = 0; i <= contador - 1; i++) {
+                if (email == arraycorreo[i]) {
                     alert("Correo electrónico ya registrado");
-                    i=contador-1;
-                    bandera=false;
-                }else{
-                    bandera=true;
+                    i = contador - 1;
+                    bandera = false;
+                } else {
+                    bandera = true;
                 }
             }
-            if(bandera==true){
+            if (bandera == true) {
+                //AGREGAR USUARIOS
                 AgregarUsuarios(nombre, apellido, email, contra, direccion, departamento, municipio, colonia, calle, casa, p1, p2, p3, p4, p5, DUI, NIT, celular, fecha_nacimiento);
-            
 
-            contador += 1;
-            Registro.Mostrar();
-            var j=0;
-//            for (i = 0; i <= contador - 1; i++) {
-//                document.getElementById("A").innerHTML = "Datos del usuario " + (i + 1) + ":" + arraynombre[i] + ", " + arrayapellido[i] + ", " + arraycorreo[i] + ", " + arrayclave[i] + ", " + arraydireccion[i] + ", " + arraydepartamento[i] + ", " + arraymunicipio[i] + ", " + arraycolonia[i] + ", " + arraycalle[i]+","+arraycasa[i]+","+arraypreguntas[j]+","+arraypreguntas[j+1]+","+arraypreguntas[j+2]+","+arraypreguntas[j+3]+","+arraypreguntas[j+4]+","+arrayDUI[i]+","+arrayNIT[i]+","+arraycel[i]+","+arrayfecha[i];
-//                j+=4;
-//            }
+
+                contador += 1;
+                //MOSTRAR MÉTODO DE OBJETO
+                Registro.Mostrar();
+                var j = 0;
+
             }
-
-            // alert(i+" Usuarios registrados actualmente");
-
-
+            //LOGIN
             document.getElementById("logeo").addEventListener("click", function () {
+                //MÉTODO DE INICIAR SESIÓN DEL OBJETO
                 Registro.IniciarSesion(document.login.Usuario.value, document.login.Contraseña.value);
             }, false);
 
 
 
         }
-        
+        //EVENTO CLICK RECUPERAR CONTRASEÑA
     }, false);
-    document.getElementById("recu").addEventListener("click", function(){
-        
-    recuperar();
-    },false);
-    
-     document.getElementById("recu_pg").addEventListener("click", function(){
-        
-    recuperar_clave();
-    },false);
+    document.getElementById("recu").addEventListener("click", function () {
+
+        recuperar(); //FUNCIÓN VALIDAR CORREO DE RECUPERACIÓN
+    }, false);
+    //EVENTO CLICK RECUPERAR CONTRASEÑA BIEN
+    document.getElementById("recu_pg").addEventListener("click", function () {
+
+        recuperar_clave(); //FUNCIÓN RECUPERAR CLAVE
+    }, false);
 
 
 };
 
+//OBJETO WALLET
 function wallet() {
-    this.nombres = [];
-    this.apellidos = [];
-    this.correos = [];
-    this.claves = [];
-    this.direcciones = [];
-    this.departamentos = [];
-    this.municipios = [];
-    this.colonias = [];
-    this.calles = [];
-
+    //MÉTODO MOSTRAR
     this.Mostrar = function () {
         alert("Usuario registrado con éxito");
         limpiar();
     }
+    //MÉTODO INICIAR SESIÓN
     this.IniciarSesion = function (usuario, clave) {
         for (i = 0; i <= contador - 1; i++) {
-            
+
             if (usuario == arraycorreo[i]) {
                 if (clave == arrayclave[i]) {
-                    this.continuar=true;                  
+                    this.continuar = true;
                     i = contador - 1;
                     //continue;
-                }else{
-                    this.continuar=false;
+                } else {
+                    this.continuar = false;
                 }
-            } else{
-                this.continuar=false;
+            } else {
+                this.continuar = false;
             }
         }
-        if(this.continuar){
+        if (this.continuar) {
             alert("Ha iniciado sesión");
-        }else{
+        } else {
             alert("Error! Revise correo o contraseña");
         }
     }
 
 
 }
-function recuperar(){
-    var correo_indice=0;
-    var existe=false;
-//    document.getElementById("Aceptarr").addEventListener("click", function(){
-       var r_correo=document.recu.correorecu.value;
-        if(r_correo!=""){
-            if(contador>0){
-            for(i=0;i<=contador-1;i++){
-                if(r_correo==arraycorreo[i]){
-                    correo_indice=i;
-                    id=i;
-                    i=contador-1;
-                    existe=true;
-                }else{
-                    existe=false;
+//FUNCIÓN RECUPERAR EMAIL RECUPERACIÓN
+function recuperar() {
+    var correo_indice = 0;
+    var existe = false;
+    var r_correo = document.recu.correorecu.value;
+    if (r_correo != "") {
+        if (contador > 0) {
+            for (i = 0; i <= contador - 1; i++) {
+                if (r_correo == arraycorreo[i]) {
+                    correo_indice = i;
+                    id = i;
+                    i = contador - 1;
+                    existe = true;
+                } else {
+                    existe = false;
                 }
             }
-            }
-        if(existe){
-                 this.document.location.href=("#popup2");
-
-    var arrayindice=new Array(0,1,2,3,4);
-            var arrayrandom=new Array("Preguntas de Seguridad 1","Preguntas de Seguridad 2", "Preguntas de Seguridad 3","Preguntas de Seguridad 4","Preguntas de Seguridad 5");
-            random=Math.floor((Math.random()*5)+0);
-           document.getElementById("question").innerHTML=arrayrandom[random];
-            
         }
-// }, false);
-//    
-        }
-};
-function recuperar_clave(){
-             var pregunta=document.recup.pg1.value;
-                if(pregunta==arraypreguntas[(id*5)+random]){
-                    alert("Pregunta de seguridad correcta");
-                    alert("Su contraseña es: "+arrayclave[id]);
-                   history.back(3);
-                }
-            
-            
-       
-            
-        
-};
+        if (existe) {
+            //MOSTRAR POPUP DE CLAVE
+            this.document.location.href = ("#popup2");
 
+            var arrayindice = new Array(0, 1, 2, 3, 4);
+            var arrayrandom = new Array("¿Nombre de tu primera mascota?", "¿Cómo se llama el primer colegio al cual asististe?", "¿Nombre de tu mamá?", "¿Nombre de tu mejor amigo?", "¿Primera calle en la cual viviste?");
+            random = Math.floor((Math.random() * 5) + 0);
+            document.getElementById("question").innerHTML = arrayrandom[random];
+
+        }
+    }
+};
+//FUNCIÓN RECUPERAR CLAVE
+function recuperar_clave() {
+    var pregunta = document.recup.pg1.value;
+    if (pregunta == arraypreguntas[(id * 5) + random]) {
+        alert("Pregunta de seguridad correcta");
+        alert("Su contraseña es: " + arrayclave[id]);
+        history.back(3);
+    }
+
+
+
+
+
+};
+//FUNCIÓN LIMPIAR
 function limpiar() {
-        nombre="";
-    apellido="";
-    email="";
-    contra="";
-    direccion="";
-    departamento="";
-    municipio="";
-    colonia="";
-    calle="";
-    casa="";
-    p1="";
-    p2="";
-    p3="";
-    p4="";
-    p5="";
-    DUI="";
-    NIT="";
-    celular="";
-    fecha_nacimiento="";
+    nombre = "";
+    apellido = "";
+    email = "";
+    contra = "";
+    direccion = "";
+    departamento = "";
+    municipio = "";
+    colonia = "";
+    calle = "";
+    casa = "";
+    p1 = "";
+    p2 = "";
+    p3 = "";
+    p4 = "";
+    p5 = "";
+    DUI = "";
+    NIT = "";
+    celular = "";
+    fecha_nacimiento = "";
 
 }
-
-function AgregarUsuarios(nombre, apellido, correo, clave, dir, dep, mun, col, calle, casa,pt1, pt2, pt3, pt4, pt5, dui, nit, celu, fechanac) {
+//FUNCIÓN AGREGAR USUARIOS 
+function AgregarUsuarios(nombre, apellido, correo, clave, dir, dep, mun, col, calle, casa, pt1, pt2, pt3, pt4, pt5, dui, nit, celu, fechanac) {
     var valornombre = nombre;
     var valorapellido = apellido;
     var valorcorreo = correo;
@@ -302,17 +299,18 @@ function AgregarUsuarios(nombre, apellido, correo, clave, dir, dep, mun, col, ca
     var valormunicipio = mun;
     var valorcolonia = col;
     var valorcalle = calle;
-    var valorcasa=casa;
-    var valorp1=pt1;
-    var valorp2=pt2;
-    var valorp3=pt3;
-    var valorp4=pt4;
-    var valorp5=pt5;
-    var valordui=dui;
-    var valornit=nit;
-    var valorcelu=celu;
-    var valorfecha=fechanac;
-    
+    var valorcasa = casa;
+    var valorp1 = pt1;
+    var valorp2 = pt2;
+    var valorp3 = pt3;
+    var valorp4 = pt4;
+    var valorp5 = pt5;
+    var valordui = dui;
+    var valornit = nit;
+    var valorcelu = celu;
+    var valorfecha = fechanac;
+
+    //AGREGAR DATOS A LOS ARREGLOS
     arraynombre.push(valornombre);
     arrayapellido.push(valorapellido);
     arraycorreo.push(valorcorreo);
@@ -323,7 +321,7 @@ function AgregarUsuarios(nombre, apellido, correo, clave, dir, dep, mun, col, ca
     arraycolonia.push(valorcolonia);
     arraycalle.push(valorcalle);
     arraycasa.push(valorcasa);
-   arraypreguntas.push(valorp1);
+    arraypreguntas.push(valorp1);
     arraypreguntas.push(valorp2);
     arraypreguntas.push(valorp3);
     arraypreguntas.push(valorp4);
@@ -334,6 +332,7 @@ function AgregarUsuarios(nombre, apellido, correo, clave, dir, dep, mun, col, ca
     arrayfecha.push(valorfecha);
 }
 
+//VERIFICAR SI PÁGINA ESTÁ CARGADA
 if (window.addEventListener) {
     window.addEventListener("load", iniciar, false);
 } else if (window.attachEvent) {
