@@ -59,35 +59,7 @@
 
      });
  }
-var cuentas={
-    cuenta:"",
-    banco:"",
-    saldo:0,
-   };
-var tarjetas={
-    cuenta:"",
-    banco:"",
-    saldo:0,
-    porcentaje:0,
-    fecha:0,
-   };
-var ingresos={
-    cuenta:"",
-    motivo:"",
-    saldo:0,
-    fecha:"",
-   };
-var gastos={
-    cuenta:"",
-    motivo:"",
-    saldo:0,
-    fecha:"",
-   };
-var configuraciones={
-    cuenta:"",
-    minimo:"",
-    fecha:"",
-   };
+
 
  //VERIFICAR SI PÁGINA ESTÁ CARGADA
  if (window.addEventListener) {
