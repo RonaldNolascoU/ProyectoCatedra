@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ingresos</title>
+    <script src="../js/ingresos.js"></script> 
+    <link rel="stylesheet" href="../css/estilo_ingresos.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script src="../js/jq.js"></script>
+</head>
+<body>
+  
+  <header>
+     
+     <section id="mostrar">
+         <script src="../js/mostrar.js"></script>
+         <h1 class="btn_logo">e-Wallet</h1>
+     </section>
+     
+      <nav class="oculto">
+       <ul>
+           <li class="logo">
+               <a href="../html/e-wallet.html">e-Wallet</a>
+           </li>
+           <li>
+               <a href="../html/Cuentas.html">Cuentas</a>
+           </li>
+           <li class="aqui">
+               <a href="../html/Ingresos.html">Ingresos</a>
+           </li>
+           <li>
+               <a href="../html/Gastos.html">Gastos</a>
+           </li>
+           <li>
+               <a href="../html/Configuracion.html">Configuración</a>
+           </li>
+           <li>
+               <a href="../html/Estadisticas.html">Estadísticas</a>
+           </li>
+       </ul>
+   </nav>
+  </header>
+   
+   <section class="contenedor">
+    <h1 id="mostrar"></h1>
+     <section class="contenido">
+        
+         <h1>Ingresos</h1>
+         
+         <input type="date" name="fecha" placeholder="Fecha" class="inn" id="ifecha">
+         <br>
+         <input type="text" name="motivo" placeholder="Motivo" required class="inn" id="imotivo">
+         <br>
+         <input type="text" name="monto" placeholder="Monto" required class="inn" id="imonto">
+         <br>
+         <select id="select_cuentas">
+         </select>
+<!--         <input type="text" name="cuenta" placeholder="Cuenta" required class="inn" id="icuenta">-->
+         <br>
+         <br>
+         <input type="button" id="logeo" name="Iniciar" value="ACEPTAR" required class="envio">
+         <br>
+         
+     </section>
+      
+      
+      <a href="#popup" class="informacion" id="infobtn">Ver mas información</a> 
+      
+  </section>
+  
+  <!-- Mostrar datos -->
+   
+   <div class="modal-wrapper" id="popup">
+       <div class="popup-contenedor">
+         
+          <section class="modal-info">
+         
+          <section class="MInfoing"> 
+          <h2>Ingresos</h2>
+          <section id="MFecha_in"></section>
+          <section id="MMotivo_in"></section>
+          <section id="MMonto_in"></section> 
+          <section id="MCuenta_in"></section>  
+        <section id="MMonto_in2"></section> 
+          <section id="MCuenta_in2"></section> 
+          </section>
+           
+         </section>
+         
+          <a class="popup-cerrar" href="#">X</a>
+       </div>
+   </div>
+   
+    
+</body>
+</html>

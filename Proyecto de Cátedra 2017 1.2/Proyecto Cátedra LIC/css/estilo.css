@@ -1,0 +1,677 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*@media screen and (max-width:)*/
+    
+@media screen and (max-width:1920px) and (min-width:550px){
+  /*-----------------Cuerpo-----------------*/
+body{
+    font-family: "Century Gothic";
+    background-image: url(../img/1.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+}
+
+header{
+    font-size: 3.2em;
+    text-align: center;
+    color: #000;
+    font-family: "PresideBold";
+    padding: 5px;
+    box-sizing: border-box;
+    margin-bottom: 3.5%;
+}
+/*----------------Fuentes----------------*/
+@font-face{
+    font-family: "PresideBold";
+    src: url(../fonts/PresideBold.ttf);
+}
+@font-face{
+    font-family: "Anisha";
+    src: url(../fonts/Anisha.otf);
+}
+/*-----------------Login-----------------*/
+.login{
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 350px;
+    height: 480px;
+    margin-top: 15%;
+    /*float: left;
+    margin-left: 13%;
+    margin-right: 5%;
+    */
+    margin: auto;
+    display: block;
+    margin-bottom: 8%;
+}
+.tema{
+    font-family: "PresideBold";
+    font-size: 3em;
+    text-align: center;
+    color: #fff;
+    padding: 15px;
+    box-sizing: border-box;
+}
+/*-----------------Formulario-----------------*/
+form{
+    margin-top: 5%;
+}
+.ingreso{
+    
+    background-color: transparent;
+    color: #fff;
+    padding: 8px;
+    box-sizing: border-box;
+    display: block;
+    margin: auto;
+    font-size: 1.1em;
+    transition: 0.5s ease-out;
+}
+.ingreso2{
+    
+    background-color: transparent;
+    color: #fff;
+    padding: 8px;
+    box-sizing: border-box;
+    display: block;
+    margin: auto;
+    font-size: 1.1em;
+    transition: 0.5s ease-out;
+    width: 100%;
+}
+.envio{
+    background-color: rgba(48, 82, 116, 0.8);
+    border: none;
+    padding: 8px;
+    font-size: 1em;
+    width: 35%;
+    display: block;
+    margin: auto;
+    color: #fff;
+    transition: 0.5s ease-out;
+}
+.envio1{
+    background-color: rgba(48, 82, 116, 0.8);
+    border: none;
+    padding: 8px;
+    font-size: 1em;
+    width: 118%;
+    color: #fff;
+    transition: 0.5s ease-out;
+    margin-left: 5%;
+    float: left;
+    display: block;
+    margin: auto;
+}
+
+.none{
+    margin-left: 16%;
+    font-size: 0.8em;
+    text-decoration: none;
+    color: #fff;
+    
+}
+#A{
+    color:white;
+}
+#question{
+    color:white;
+}
+.envio:hover{
+    background-color: rgba(48, 114, 237, 0.7);
+
+}
+.envio1:hover{
+    background-color: rgba(48, 114, 237, 0.7);
+
+}
+.imagen{
+    width: 35%;
+    display: block;
+    margin: auto;
+}
+
+
+/*--------------------Registrar--------------------*/
+.registro{
+    float: left;
+}
+.login_2{
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    display: block;
+    margin: auto;
+    margin-top: 5%;
+    float: left;
+    
+}
+.tema_2{
+    font-family: "PresideBold";
+    font-size: 3em;
+    text-align: center;
+    color: #fff;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-top: 5%;
+}
+/*-----------------Formulario-----------------*/
+form{
+    margin-top: 5%;
+}
+
+.ingreso_2{
+    
+    background-color: transparent;
+    color: #fff;
+    padding: 8px;
+    box-sizing: border-box;
+    font-size: 1.1em;
+    transition: 0.5s ease-out;
+    width: 118%;
+}
+.envio_2{
+    background-color: rgba(48, 82, 116, 0.8);
+    border: none;
+    padding: 8px;
+    font-size: 1em;
+    width: 35%;
+    display: block;
+    margin: auto;
+    color: #fff;
+    transition: 0.5s ease-out;
+}
+.none_2{
+    margin-left: 16%;
+    font-size: 0.8em;
+    text-decoration: none;
+    color: #fff;
+    
+}
+.envio_2:hover{
+    background-color: rgba(48, 114, 237, 0.7);
+
+}
+.imagen_2{
+    width: 35%;
+    display: block;
+    margin: auto;
+}
+
+
+/*-----------------------Ubicaciones-----------------------*/
+.contenido2{
+    
+    display: block;
+    margin: auto;
+}
+
+.general{
+    float: left;
+    margin-left: 18%;
+    margin-right: 3%;
+}
+ .seguridad{
+    float: left;
+    margin-right: 3%;
+}
+
+.general2{
+    float: left;
+    margin-right: 3%;
+}
+.contenido_2{
+    margin-top: -2%;
+    margin-bottom: 3%;
+}
+/*-------------------Ventana Modal-------------------*/
+.modal-wrapper{
+    top: 0;
+    position: absolute;
+}
+#popup, #popup2 {
+   visibility: hidden;
+   opacity: 0;
+   margin-top: -300px;
+}
+#popup:target, #popup2:target {
+   visibility:visible;
+   opacity: 1;
+   background-color: rgba(0,0,0,0.9);
+   position: fixed;
+   top:0;
+   left:0;
+   right:0;
+   bottom:0;
+   margin:0;
+   z-index: 999;
+   transition:all 1s;
+}
+.popup-link, .popup2-link{
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+.popup-contenedor h1, .popup2-contenedor h1{
+    text-align: center;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    color: #fff;
+    font-family: "PresideBold";
+    font-size: 3em;
+}
+.popup-contenedor, .popup2-contenedor {
+   position: relative;
+   margin:15% auto;
+   padding:15px;
+   box-sizing: border-box;
+   background: rgb(129,239,133); /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(129,239,133,1) 0%, rgba(32,124,202,1) 84%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(129,239,133,1) 0%,rgba(32,124,202,1) 84%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(129,239,133,1) 0%,rgba(32,124,202,1) 84%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#81ef85', endColorstr='#207cca',GradientType=1 ); /* IE6-9 */
+   color:#333;
+   border-radius: 3px;
+   width:40%;
+}
+.popup-contenedor p, .popup2-contenedor p{
+    text-align: center;
+    color: #fff;
+}
+a.popup-cerrar, a.popup2-cerrar {
+   position: absolute;
+   top:3px;
+   right:3px;
+   background-color: #23B684;
+   padding:7px 10px;
+   font-size: 20px;
+   text-decoration: none;
+   line-height: 1;
+   color:#000;
+   border-radius: 50%;
+}
+.envm{
+    background-color: #00587A;
+    border: none;
+    padding: 8px;
+    font-size: 1em;
+    width: 47%;
+    color: #fff;
+    transition: 0.5s ease-out;
+    margin-left: 26.5%;
+    margin-bottom: 3%;
+   
+}
+.ing_modal{
+    
+    background-color: transparent;
+    color: #fff;
+    padding: 8px;
+    box-sizing: border-box;
+    display: block;
+    margin: auto;
+    font-size: 1.1em;
+    transition: 0.5s ease-out;
+    border: 0.5px solid #000;
+    border-radius: 5px;
+}
+.ing_modal::placeholder{
+    color: white;
+}
+
+
+}
+
+@media screen and (max-width:550px) and (min-width:10px){
+      
+/*-----------------Cuerpo-----------------*/
+body{
+    font-family: "Century Gothic";
+    background-image: url(../img/1.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+}
+
+header{
+    font-size: 5.2em;
+    text-align: center;
+    color: #65878F;
+    font-family: "PresideBold";
+    padding: 5px;
+    box-sizing: border-box;
+    margin-bottom: 5%;
+}
+/*----------------Fuentes----------------*/
+@font-face{
+    font-family: "PresideBold";
+    src: url(../fonts/PresideBold.ttf);
+}
+@font-face{
+    font-family: "Anisha";
+    src: url(../fonts/Anisha.otf);
+}
+/*-----------------Login-----------------*/
+.login{
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 80%;
+    margin-top: 15%;
+    /*float: left;
+    margin-left: 13%;
+    margin-right: 5%;
+    */
+    margin: auto;
+    display: block;
+    margin-bottom: 20%;
+    padding: 15px;
+}
+.tema{
+    font-family: "PresideBold";
+    font-size: 3em;
+    text-align: center;
+    color: #fff;
+    padding: 15px;
+    box-sizing: border-box;
+}
+/*-----------------Formulario-----------------*/
+form{
+    margin-top: 5%;
+}
+.ingreso{
+    
+    background-color: transparent;
+    color: #fff;
+    padding: 8px;
+    box-sizing: border-box;
+    display: block;
+    margin: auto;
+    font-size: 1.1em;
+    transition: 0.5s ease-out;
+}
+.ingreso2{
+    
+    background-color: transparent;
+    color: #fff;
+    padding: 8px;
+    box-sizing: border-box;
+    display: block;
+    margin: auto;
+    font-size: 1.1em;
+    transition: 0.5s ease-out;
+    width: 240px;
+}
+.envio{
+    background-color: rgba(48, 82, 116, 0.8);
+    border: none;
+    padding: 8px;
+    font-size: 1em;
+    width: 35%;
+    display: block;
+    margin: auto;
+    color: #fff;
+    transition: 0.5s ease-out;
+}
+.envio1{
+    background-color: rgba(48, 82, 116, 0.8);
+    border: none;
+    padding: 8px;
+    font-size: 1em;
+    width: 118%;
+    color: #fff;
+    transition: 0.5s ease-out;
+    margin-left: 5%;
+    float: left;
+    display: block;
+    margin: auto;
+    margin-bottom: 15%;
+}
+
+.none{
+    margin-left: 16%;
+    font-size: 0.8em;
+    text-decoration: none;
+    color: #fff;
+    
+}
+#A{
+    color:white;
+}
+#question{
+    color:white;
+}
+.envio:hover{
+    background-color: rgba(48, 114, 237, 0.7);
+
+}
+.envio1:hover{
+    background-color: rgba(48, 114, 237, 0.7);
+
+}
+.imagen{
+    width: 35%;
+    display: block;
+    margin: auto;
+}
+
+
+/*--------------------Registrar--------------------*/
+.registro{
+    float: left;
+}
+.login_2{
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    display: block;
+    margin: auto;
+    margin-top: 5%;
+    float: left;
+    
+}
+.tema_2{
+    font-family: "PresideBold";
+    font-size: 3em;
+    text-align: center;
+    color: #fff;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+/*-----------------Formulario-----------------*/
+form{
+    margin-top: 5%;
+}
+
+.ingreso_2{
+    
+    background-color: transparent;
+    color: #fff;
+    padding: 8px;
+    box-sizing: border-box;
+    font-size: 1.1em;
+    transition: 0.5s ease-out;
+    width: 118%;
+}
+.envio_2{
+    background-color: rgba(48, 82, 116, 0.8);
+    border: none;
+    padding: 8px;
+    font-size: 1em;
+    width: 35%;
+    display: block;
+    margin: auto;
+    color: #fff;
+    transition: 0.5s ease-out;
+}
+.none_2{
+    margin-left: 16%;
+    font-size: 0.8em;
+    text-decoration: none;
+    color: #fff;
+    
+}
+.envio_2:hover{
+    background-color: rgba(48, 114, 237, 0.7);
+
+}
+.imagen_2{
+    width: 35%;
+    display: block;
+    margin: auto;
+}
+
+
+/*-----------------------Ubicaciones-----------------------*/
+.contenido{
+    width: 100%;
+}
+.contenido2{
+    
+    display: block;
+    margin: auto;
+}
+
+.general{
+    float: left;
+    width: 100%
+}
+ .seguridad{
+    float: left;
+    width: 80%;
+    margin-left:2.5%;
+}
+
+.general2{
+    float: left;
+   width: 100%
+}
+.contenido_2{
+    margin-top: -2%;
+    margin-bottom: 3%;
+}
+/*-------------------Ventana Modal-------------------*/
+.modal-wrapper{
+    top: 0;
+    position: absolute;
+}
+#popup, #popup2 {
+   visibility: hidden;
+   opacity: 0;
+   margin-top: -300px;
+}
+#popup:target, #popup2:target {
+   visibility:visible;
+   opacity: 1;
+   background-color: rgba(0,0,0,0.9);
+   position: fixed;
+   top:0;
+   left:0;
+   right:0;
+   bottom:0;
+   margin:0;
+   z-index: 999;
+   transition:all 1s;
+}
+.popup-link, .popup2-link{
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+.popup-contenedor h1, .popup2-contenedor h1{
+    text-align: center;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    color: #fff;
+    font-family: "PresideBold";
+    font-size: 3em;
+}
+.popup-contenedor, .popup2-contenedor {
+   position: relative;
+   margin:15% auto;
+   padding:15px;
+   box-sizing: border-box;
+   background: rgb(129,239,133); /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(129,239,133,1) 0%, rgba(32,124,202,1) 84%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(129,239,133,1) 0%,rgba(32,124,202,1) 84%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(129,239,133,1) 0%,rgba(32,124,202,1) 84%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#81ef85', endColorstr='#207cca',GradientType=1 ); /* IE6-9 */
+   color:#333;
+   border-radius: 3px;
+   width:90%;
+}
+.popup-contenedor p, .popup2-contenedor p{
+    text-align: center;
+    color: #fff;
+}
+a.popup-cerrar, a-popup2-cerrar {
+   position: absolute;
+   top:3px;
+   right:3px;
+   background-color: #23B684;
+   padding:7px 10px;
+   font-size: 20px;
+   text-decoration: none;
+   line-height: 1;
+   color:#000;
+   border-radius: 50%;
+}
+.envm{
+    background-color: #00587A;
+    border: none;
+    padding: 8px;
+    font-size: 1em;
+    width: 47%;
+    color: #fff;
+    transition: 0.5s ease-out;
+    margin-left: 26.5%;
+    margin-bottom: 3%;
+   
+}
+.ing_modal{
+    
+    background-color: transparent;
+    color: #fff;
+    padding: 8px;
+    box-sizing: border-box;
+    display: block;
+    margin: auto;
+    font-size: 1.1em;
+    transition: 0.5s ease-out;
+    border: 0.5px solid #000;
+    border-radius: 5px;
+}
+.ing_modal::placeholder{
+    color: white;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

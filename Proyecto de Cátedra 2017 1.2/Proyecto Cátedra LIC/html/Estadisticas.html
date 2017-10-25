@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Configuracion</title>
+    <script src="../js/estadistica.js"></script>
+    <link rel="stylesheet" href="../css/estilo_estadisticas.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script src="../js/jq.js"></script>
+</head>
+<body>
+  
+   <header>
+     
+     <section id="mostrar">
+         <script src="../js/mostrar.js"></script>
+         <h1 class="btn_logo">e-Wallet</h1>
+     </section>
+     
+      <nav class="oculto">
+       <ul>
+           <li class="logo">
+               <a href="../html/e-wallet.html">e-Wallet</a>
+           </li>
+           <li>
+               <a href="../html/Cuentas.html">Cuentas</a>
+           </li>
+           <li>
+               <a href="../html/Ingresos.html">Ingresos</a>
+           </li>
+           <li>
+               <a href="../html/Gastos.html">Gastos</a>
+           </li>
+           <li>
+               <a href="../html/Configuracion.html">Configuración</a>
+           </li>
+           <li  class="aqui">
+               <a href="../html/Estadisticas.html">Estadísticas</a>
+           </li>
+       </ul>
+   </nav>
+  </header>
+   
+   <section class="contenedor" id="mover">
+     
+     <section class="contenido">
+        
+         <h1>Ingresos vs Gastos</h1>
+         <select name="cont_opc" id="cont_opc" class="inn">
+             <option value=""></option>
+             <option value="Mensual">Mensual</option>
+             <option value="Anuales">Anual</option>
+             <option value="Periodo">Periodo</option>
+         </select>
+         <br>
+         <input type="month" min="2017-01" max="2017-12" name="ing_opc" id="mes" style='visibility:hidden;'><br>
+          <input type="date" name="ing_opc" id="anio" style='visibility:hidden;'><br>
+          <input type="date" name="ing_opc" id="periodo" style='visibility:hidden;'><br>
+         <p></p>
+         <br>
+         <br>
+         <input type="button" id="logeo_1" name="Iniciar" value="ACEPTAR" required class="envio">
+         <br>
+         
+          <a href="#popup" class="informacion">Ver más información</a>
+         
+     </section>
+      
+  </section>
+   
+   <section class="contenedor" id="mover2">
+     
+     <section class="contenido">
+        
+         <h1>Ingresos</h1>
+        <select name="ing_opc" id="ing_opc" class="inn">
+             <option value=""></option>
+             <option value="Mensual">Mensual</option>
+             <option value="Anuales">Anual</option>
+             <option value="Periodo">Periodo</option>
+         </select>
+         <br>
+         <input type="month" min="2017-01" max="2017-12" name="ing_opc" id="mes2" style='visibility:hidden;'><br>
+          <input type="date" name="ing_opc" id="anio2" style='visibility:hidden;'><br>
+          <input type="date" name="ing_opc" id="periodo2" style='visibility:hidden;'><br>
+         <p></p>
+         <br>
+         <br>
+         <input type="button" id="logeo_2" name="Iniciar" value="ACEPTAR" required class="envio">
+         <br>
+         
+          <a href="#popup" class="informacion">Ver más información</a>
+          
+     </section>
+      
+  </section>
+   
+   <section class="contenedor" id="mover2">
+     
+     <section class="contenido">
+        
+         <h1>Comparativos</h1>
+         <select name="comp_opc" id="comp_opc" class="inn">
+             <option value=""></option>
+             <option value="Mensual">Mensual</option>
+             <option value="Anuales">Anual</option>
+             <option value="Periodo">Periodo</option>>
+         </select>
+         <br>
+          <input type="month" min="2017-01" max="2017-12" name="ing_opc" id="mes3" style='visibility:hidden;'>
+         <br>
+          <input type="date" name="ing_opc" id="anio3" style='visibility:hidden;'>
+         <br>
+          <input type="date" name="ing_opc" id="periodo3" style='visibility:hidden;'>
+         <br>
+         <p></p>
+         <br>
+         <br>
+         <input type="button" id="logeo_3" name="Iniciar" value="ACEPTAR" required class="envio">
+         <br>
+         
+          <a href="#popup" class="informacion">Ver más información</a>
+         
+     </section>
+      
+  </section>
+   
+   <br>
+   <br>
+   <br>
+   
+   <!-- Mostrar datos -->
+   
+   <div class="modal-wrapper" id="popup">
+       <div class="popup-contenedor">
+          <h2>Información de Cuentas</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptas dolore voluptatem at pariatur, culpa minima, maxime dolor maiores consequuntur architecto odio eveniet beatae cupiditate quos dolorem, illum dolores magni.</p>
+          <a class="popup-cerrar" href="#">X</a>
+       </div>
+   </div>
+    
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Configuracion</title>
+    <script src="../js/configuracion.js"></script>
+    <link rel="stylesheet" href="../css/estilo_cofiguracion.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+     <script src="../js/jq.js"></script>
+</head>
+<body>     
+   <header>
+     
+     <section id="mostrar">
+         <script src="../js/mostrar.js"></script>
+         <h1 class="btn_logo">e-Wallet</h1>
+     </section>
+     
+      <nav class="oculto">
+       <ul>
+           <li class="logo">
+               <a href="../html/e-wallet.html">e-Wallet</a>
+           </li>
+           <li>
+               <a href="../html/Cuentas.html">Cuentas</a>
+           </li>
+           <li>
+               <a href="../html/Ingresos.html">Ingresos</a>
+           </li>
+           <li>
+               <a href="../html/Gastos.html">Gastos</a>
+           </li>
+           <li class="aqui">
+               <a href="../html/Configuracion.html">Configuración</a>
+           </li>
+           <li>
+               <a href="../html/Estadisticas.html">Estadísticas</a>
+           </li>
+           <li>
+                <h1 id="mostrar-dinero"></h1>
+           </li>
+       </ul>
+   </nav>
+  </header>
+  
+  <section class="contenedor">
+     
+     <section class="contenido">
+         <h1>Cuentas</h1>
+         
+         <h4>Tipo de pago:</h4>
+         <select class="inn_m" id="opciones_pago">
+            <option value="Efectivo">Efectivo</option>
+             <option value="Cuenta de ahorro">Cuenta de ahorro</option>
+             <option value="Tarjeta de crédito">Tarjeta de crédito</option>
+         </select>
+         <br>      
+          <select class="inn_m" id="select_cuentas"  style='visibility:hidden;'>
+         </select>
+         <br>
+         <select class="inn_m" id="select_tarjetas"  style='visibility:hidden;'>
+         </select>
+         
+<!--         <input type="text" name="banco" placeholder="Banco" required class="inn" id="bancocf">-->
+         <br>
+         <h4>Balance mínimo:</h4>
+         <input type="text" name="valmax" placeholder="Balance mínimo" required class="inn" id="ingresocf">
+         <br>
+         <br>
+         <input type="button" id="logeo" name="Iniciar" value="ACEPTAR" required class="envio">
+         <br>
+         
+     </section>
+    
+      
+  </section>
+    
+</body>
+</html>
