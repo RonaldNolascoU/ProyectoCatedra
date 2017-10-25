@@ -101,11 +101,11 @@ function iniciar() {
             bandera = false;
             respuesta = "colonia";
         }
-        if (!rgxcalle.test(calle)) {
+        if (!rgxnombre.test(calle)) {
             bandera = false;
             respuesta = "calle";
         }
-        if (!rgxnombre.test(casa)) {
+        if (!rgxcalle.test(casa)) {
             bandera = false;
             respuesta = "casa";
         }
