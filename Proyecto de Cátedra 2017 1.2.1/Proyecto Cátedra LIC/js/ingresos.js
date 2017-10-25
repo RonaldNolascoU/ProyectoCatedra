@@ -50,7 +50,7 @@ var i_cuenta = document.getElementById("select_cuentas");
             var saldo_nuevo=(parseInt(localStorage.saldo_incio)+parseInt(localStorage.saldo_ingresos));
             //var split_saldo_nuevo= saldo_nuevo.split();
             localStorage.saldo_nuevo= saldo_nuevo;
-            //localStorage.saldo_incio=localStorage.saldo_nuevo;
+            localStorage.saldo_incio=localStorage.saldo_nuevo;
        //localStorage.cuenta_ingresos = split4_in; 
         }else{
               alert("Revise los datos, por favor");

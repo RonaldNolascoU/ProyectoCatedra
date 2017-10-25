@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <script src="../js/registro.js"></script>
+    <script src="../js/sesion.js"></script>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Cátedra</title>
+</head>
+<body>
+    
+    <header>
+        e-Wallet  
+    </header>
+    
+    <section class="login">
+       <h1 id="A"></h1>
+        <h1 class="tema">Login</h1>
+        <img src="../img/inf.png" alt="" class="imagen">
+        
+        <section class="contenido">
+            
+            <form method="get" name="login">
+            <input type="text" name="Usuario" placeholder="Correo Electrónico" class="ingreso">
+            <br>
+            <input type="password" name="Contraseña" placeholder="Contraseña" class="ingreso">
+            <br>
+            <input type="button" id="logeo" name="Iniciar" value="LOGIN" class="envio">
+            <br>
+           
+            
+            <a href="#popup" id="#" class="popup-link">
+            
+            
+            Recuperar contraseña
+            </a>
+            <br>
+                
+             
+            
+            </form>
+            
+        </section>
+        
+    </section>
+    
+    
+    
+    
+    <div class="modal-wrapper" id="popup">
+      <form name="recu">
+       <div class="popup-contenedor">
+         
+          <h1>Recuperar Contraseña </h1>
+          <input type="email" name="correorecu" placeholder="Correo electrónico" class="ing_modal">
+          <br>
+          <br>
+          <p></p>
+          <br>  
+          <input type="button" id="recu" value="ACEPTAR" class="envm" href="#popup2">
+          <br>
+          <a class="popup-cerrar" href="#">X</a>
+          
+       </div>
+      </form>
+    </div>
+    
+    
+    
+      <div class="modal-wrapper" id="popup2">
+      <form name="recu_pg">
+       <div class="popup2-contenedor">
+         
+          <h1>Recuperar Contraseña </h1>
+           <label id="question"></label>
+          <input type="text" name="pg1" class="ing_modal">
+          <br>
+          <br>
+          <p></p>
+          <br>
+         
+
+          <input type="button" id="recu_pg" value="ACEPTAR" class="envm" href="#popup2">
+          <br>
+          <a class="popup2-cerrar" href="#">X</a>
+          
+       </div>
+      </form>
+    </div>
+    
+    
+    
+    
+  <section class="login_2">
+       
+        <h1 class="tema_2">Registrar</h1>
+        
+        <section class="contenido_2">
+            <form  name="registro">
+            
+            <section class="general">
+               
+                <input type="text" name="nombre" placeholder="Nombre" class="ingreso">
+                <br>
+                <input type="text" name="apellido" placeholder="Apellido" class="ingreso">
+                <br>
+                <input type="email" name="correo" id="mail" placeholder="Correo electrónico" class="ingreso">
+                <br>
+                <input type="password" name="contra" id="pass" placeholder="Contraseña" class="ingreso">
+                <br>    
+                <input type="text" name="direccion" placeholder="Dirección" class="ingreso">
+                <br>
+                <input type="text" name="departamento" placeholder="Departamento" class="ingreso">
+                <br>
+                <input type="text" name="municipio" placeholder="Municipio" class="ingreso">
+                <br>
+             </section>
+             
+             <section class="general2">
+              
+                <input type="text" name="colonia" placeholder="Colonia" class="ingreso">
+                <br>
+                <input type="text" name="calle" placeholder="Calle" class="ingreso">
+                <br>
+                <input type="text" name="casa" placeholder="#Casa" class="ingreso">
+                <br>
+                <input type="text" name="DUI" placeholder="DUI" class="ingreso">
+                <br>
+                <input type="text" name="NIT" placeholder="NIT" class="ingreso">
+                <br>
+                <input type="text" name="celular" placeholder="Número de celular" class="ingreso">
+                <br>
+                <input type="date" name="fechanacimiento" placeholder="Fecha de Nacimiento" class="ingreso2">
+                <br>
+                
+                 <br>
+             </section>
+           
+             <section class="seguridad">
+               
+                <input type="text" name="p1" placeholder="¿Nombre de tu primera mascota?" class="ingreso_2">
+                <br>
+                <br>
+                <input type="text" name="p2" placeholder="¿Primer colegio al cual asististe?" class="ingreso_2">
+                <br>
+                <br>
+                <input type="text" name="p3" placeholder="¿Nombre de tu mamá?" class="ingreso_2">
+                <br>
+                <br>
+                <input type="text" name="p4" placeholder="¿Nombre de tu mejor amigo?" class="ingreso_2">
+                <br>
+                <br>
+                <input type="text" name="p5" placeholder="¿Primera calle en la cual viviste?" class="ingreso_2">
+                <br>
+                <br>
+                <br>
+                <input type="button" name="Iniciar"  id="enviar" value="ACEPTAR" class="envio1">
+                 <input type="button" name="Iniciar"  id="enviar2" value="LLENAR" class="envio1">
+                <br>
+                <br>
+            </section>
+            
+                
+                
+            </form>
+        </section>
+        
+    </section>
+    
+    
+</body>
+</html>

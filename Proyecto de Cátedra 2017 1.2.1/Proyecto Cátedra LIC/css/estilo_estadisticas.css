@@ -16,7 +16,7 @@
 /*-----------------Cuerpo-----------------*/
 body{
     font-family: "Century Gothic";
-    background-image: url(../img/6.jpeg);
+    background-image: url(../img/3.jpeg);
     background-attachment: fixed;
     background-size: cover;
     width: 100%;
@@ -85,12 +85,12 @@ nav ul li:hover a:before{
 .contenedor{
    /* background-color: rgba(0,0,0,0.8);*/
     background-color: rgba(237, 214, 146, 0.9);
-    width: 30%;
-    display: block;
-    margin: auto;
+    width: 28%;
     margin-top: 6%;
     padding: 15px;
     box-sizing: border-box;
+    float: left;
+    margin-left: 3%;
 }
 
 .contenedor .contenido{
@@ -126,6 +126,10 @@ nav ul li:hover a:before{
     background-color: rgba(48, 114, 237, 0.7);
 
 }
+#mover{
+    margin-left: 5%;
+}
+    
 #mostrar{
     display: none;
 }
@@ -149,16 +153,13 @@ nav ul li:hover a:before{
    transition:all 1s;
 }
 .popup-contenedor {
-   float: left;
    position: relative;
    margin:7% auto;
    padding:30px 50px;
    background-color: #D4DBC8;
    color:#333;
    border-radius: 3px;
-   width:40%;
-   margin-left: 25%;
-    
+   width:50%;
 }
 a.popup-cerrar {
    position: absolute;
@@ -181,46 +182,16 @@ a.popup-cerrar {
     transition: 0.5s ease-out;
     
     }
-    .modal-info{
-        position: relative;
-        float: left;
-        width: 100%;
-        padding: 5px;
-        box-sizing: border-box;
-        
-    }
-    .MInfoing{
-        float: left;
-        width: 80%;
-        padding: 5px;
-        box-sizing: border-box;
-        background-color: #E7E7DE;
-        height: 160px;
-        margin-left: 10%;
-    }
-        .MInfoing h2{
-            text-align: center;
-            background-color: #00587A;
-            padding: 5px;
-            box-sizing: border-box;
-            color: #fff;
-            margin-bottom: 2%;
-        }
-    #MFecha_in{
-        margin-top: 3%;
-    }
-    #MFecha_in, #MMotivo_in, #MMonto_in, #MCuenta_in{
-        margin-left: 15%;
-        width: 100%;
-    }
- 
+    
+    
 }
+
 
 @media screen and (max-width:950px) and (min-width:760px){
-/*-----------------Cuerpo-----------------*/
+ /*-----------------Cuerpo-----------------*/
 body{
     font-family: "Century Gothic";
-    background-image: url(../img/6.jpeg);
+    background-image: url(../img/3.jpeg);
     background-attachment: fixed;
     background-size: cover;
     width: 100%;
@@ -289,12 +260,11 @@ nav ul li:hover a:before{
 .contenedor{
    /* background-color: rgba(0,0,0,0.8);*/
     background-color: rgba(237, 214, 146, 0.9);
-    width: 40%;
-    display: block;
-    margin: auto;
+    width: 90%;
     margin-top: 6%;
     padding: 15px;
     box-sizing: border-box;
+    float: left;   
 }
 
 .contenedor .contenido{
@@ -310,7 +280,7 @@ nav ul li:hover a:before{
     padding: 8px;
     border: 2px solid #6797A1;
     background-color: transparent;
-    width: 60%;
+    width: 80%;
     display: block;
     margin: auto;
     font-family: "Century Gothic";
@@ -320,7 +290,7 @@ nav ul li:hover a:before{
     border: none;
     padding: 8px;
     font-size: 1em;
-    width: 35%;
+    width: 82%;
     display: block;
     margin: auto;
     color: #fff;
@@ -330,17 +300,27 @@ nav ul li:hover a:before{
     background-color: rgba(48, 114, 237, 0.7);
 
 }
-#mostrar{
-    display: none;
+#mover{
+    margin-left: 5%;
+    margin-top: 22%;
+}
+#mover2{
+    margin-left: 5%;
+}
+    #abajo{
+        margin-bottom: 25%;
+    }
+    #mostrar{
+        display: none;
+    }
 }
 
-}
 
 @media screen and (max-width:760px) and (min-width:550px){
-/*-----------------Cuerpo-----------------*/
+  /*-----------------Cuerpo-----------------*/
 body{
     font-family: "Century Gothic";
-    background-image: url(../img/6.jpeg);
+    background-image: url(../img/3.jpeg);
     background-attachment: fixed;
     background-size: cover;
     width: 100%;
@@ -409,12 +389,11 @@ nav ul li:hover a:before{
 .contenedor{
    /* background-color: rgba(0,0,0,0.8);*/
     background-color: rgba(237, 214, 146, 0.9);
-    width: 50%;
-    display: block;
-    margin: auto;
+    width: 90%;
     margin-top: 6%;
     padding: 15px;
     box-sizing: border-box;
+    float: left;   
 }
 
 .contenedor .contenido{
@@ -430,7 +409,7 @@ nav ul li:hover a:before{
     padding: 8px;
     border: 2px solid #6797A1;
     background-color: transparent;
-    width: 60%;
+    width: 80%;
     display: block;
     margin: auto;
     font-family: "Century Gothic";
@@ -440,7 +419,7 @@ nav ul li:hover a:before{
     border: none;
     padding: 8px;
     font-size: 1em;
-    width: 35%;
+    width: 82%;
     display: block;
     margin: auto;
     color: #fff;
@@ -450,17 +429,27 @@ nav ul li:hover a:before{
     background-color: rgba(48, 114, 237, 0.7);
 
 }
-#mostrar{
-    display: none;
+#mover{
+    margin-left: 5%;
+    margin-top: 22%;
+}
+#mover2{
+    margin-left: 5%;
+}
+    #abajo{
+        margin-bottom: 25%;
+    }
+    #mostrar{
+        display: none;
+    }   
 }
 
-}
 
 @media screen and (max-width:550px) and (min-width:10px){
 /*-----------------Cuerpo-----------------*/
 body{
     font-family: "Century Gothic";
-    background-image: url(../img/5.jpeg);
+    background-image: url(../img/3.jpeg);
     background-attachment: fixed;
     background-size: cover;
     width: 100%;
@@ -470,7 +459,7 @@ body{
     padding: 5px;
     box-sizing: border-box;
     background-color: rgba(0, 0, 0, 0.6);
-    margin-bottom: 10%;
+     margin-bottom: 10%;
 }
  nav ul li{
     list-style: none;
@@ -496,6 +485,7 @@ nav ul li a{
     background-color: rgba(73, 97, 160, 0.8);
 }
 
+
 /*-----------------Ubicacion-----------------*/
 .aqui a:before{
     content: "";
@@ -512,12 +502,10 @@ nav ul li a{
    /* background-color: rgba(0,0,0,0.8);*/
     background-color: rgba(237, 214, 146, 0.9);
     width: 90%;
-    display: block;
-    margin: auto;
-    margin-top: 22%;
+    margin-top: 6%;
     padding: 15px;
     box-sizing: border-box;
-    margin-bottom: 15%;
+    float: left;   
 }
 
 .contenedor .contenido{
@@ -533,7 +521,7 @@ nav ul li a{
     padding: 8px;
     border: 2px solid #6797A1;
     background-color: transparent;
-    width: 60%;
+    width: 80%;
     display: block;
     margin: auto;
     font-family: "Century Gothic";
@@ -543,7 +531,7 @@ nav ul li a{
     border: none;
     padding: 8px;
     font-size: 1em;
-    width: 70%;
+    width: 82%;
     display: block;
     margin: auto;
     color: #fff;
@@ -553,88 +541,18 @@ nav ul li a{
     background-color: rgba(48, 114, 237, 0.7);
 
 }
-
-
-#mostrar{
-    box-sizing: border-box;
+#mover{
+    margin-left: 5%;
+    margin-top: 22%;
+}
+#mover2{
+    margin-left: 5%;
+}
+    #abajo{
+        margin-bottom: 15%;
     }
-/*----------------------Mostrar Info----------------------*/
-#popup {
-   visibility: hidden;
-   opacity: 0;
-   margin-top: -300px;
+.oculto{
+    display: none; 
 }
-#popup:target {
-   visibility:visible;
-   opacity: 1;
-   background-color: rgba(0,0,0,0.8);
-   position: fixed;
-   top:0;
-   left:0;
-   right:0;
-   bottom:0;
-   margin:0;
-   z-index: 999;
-   transition:all 1s;
-}
-.popup-contenedor {
-   float: left;
-   position: relative;
-   margin:7% auto;
-   padding:30px 50px;
-   background-color: #D4DBC8;
-   color:#333;
-   border-radius: 3px;
-   width:62%;
-   margin-left: 6%;
-   
-}
-a.popup-cerrar {
-   position: absolute;
-   top:3px;
-   right:3px;
-   background-color: #333;
-   padding:7px 10px;
-   font-size: 20px;
-   text-decoration: none;
-   line-height: 1;
-   color:#fff;
-}
-.informacion{
-    text-decoration: none;
-    background-color: #66BB6A;
-    border: none;
-    padding: 8px;
-    font-size: 1em;
-    color: #fff;
-    transition: 0.5s ease-out;
     
-    }
-    .modal-info{
-        position: relative;
-        float: left;
-        width: 100%;
-        padding: 5px;
-        box-sizing: border-box;
-        
-    }
-    .MInfoing{
-        float: left;
-        width: 100%;
-        padding: 5px;
-        box-sizing: border-box;
-        background-color: #E7E7DE;
-        height: 180px;
-    }
-        .MInfoing h2{
-            text-align: center;
-            background-color: #00587A;
-            padding: 5px;
-            box-sizing: border-box;
-            color: #fff;
-            margin-bottom: 2%;
-        }
-    
-
 }
-

@@ -2,6 +2,8 @@
     padding: 0;
     margin: 0;
 }
+
+@media screen and (max-width:1920px) and (min-width:950px){
 /*----------------Fuentes----------------*/
 @font-face{
     font-family: "PresideBold";
@@ -11,12 +13,10 @@
     font-family: "Anisha";
     src: url(../fonts/Anisha.otf);
 }
-
-@media screen and (max-width:1920px) and (min-width:950px){
 /*-----------------Cuerpo-----------------*/
 body{
     font-family: "Century Gothic";
-    background-image: url(../img/6.jpeg);
+    background-image: url(../img/2.jpeg);
     background-attachment: fixed;
     background-size: cover;
     width: 100%;
@@ -84,7 +84,7 @@ nav ul li:hover a:before{
 /*-----------------Contenedor-----------------*/
 .contenedor{
    /* background-color: rgba(0,0,0,0.8);*/
-    background-color: rgba(237, 214, 146, 0.9);
+    background-color: rgba(237, 214, 146, 0.7);
     width: 30%;
     display: block;
     margin: auto;
@@ -97,10 +97,9 @@ nav ul li:hover a:before{
     padding: 15px;
     box-sizing: border-box;
 }
-.contenido h1{
+.contenido h2{
     text-align: center;
     margin-bottom: 5%;
-    font-size: 2em;
 }
 .inn{
     padding: 8px;
@@ -126,101 +125,26 @@ nav ul li:hover a:before{
     background-color: rgba(48, 114, 237, 0.7);
 
 }
-#mostrar{
-    display: none;
-}
-/*----------------------Mostrar Info----------------------*/
-#popup {
-   visibility: hidden;
-   opacity: 0;
-   margin-top: -300px;
-}
-#popup:target {
-   visibility:visible;
-   opacity: 1;
-   background-color: rgba(0,0,0,0.8);
-   position: fixed;
-   top:0;
-   left:0;
-   right:0;
-   bottom:0;
-   margin:0;
-   z-index: 999;
-   transition:all 1s;
-}
-.popup-contenedor {
-   float: left;
-   position: relative;
-   margin:7% auto;
-   padding:30px 50px;
-   background-color: #D4DBC8;
-   color:#333;
-   border-radius: 3px;
-   width:40%;
-   margin-left: 25%;
-    
-}
-a.popup-cerrar {
-   position: absolute;
-   top:3px;
-   right:3px;
-   background-color: #333;
-   padding:7px 10px;
-   font-size: 20px;
-   text-decoration: none;
-   line-height: 1;
-   color:#fff;
-}
-.informacion{
-    text-decoration: none;
-    background-color: #66BB6A;
-    border: none;
-    padding: 8px;
-    font-size: 1em;
-    color: #fff;
-    transition: 0.5s ease-out;
-    
+    #mostrar{
+        display: none;
     }
-    .modal-info{
-        position: relative;
-        float: left;
-        width: 100%;
-        padding: 5px;
-        box-sizing: border-box;
-        
-    }
-    .MInfoing{
-        float: left;
-        width: 80%;
-        padding: 5px;
-        box-sizing: border-box;
-        background-color: #E7E7DE;
-        height: 160px;
-        margin-left: 10%;
-    }
-        .MInfoing h2{
-            text-align: center;
-            background-color: #00587A;
-            padding: 5px;
-            box-sizing: border-box;
-            color: #fff;
-            margin-bottom: 2%;
-        }
-    #MFecha_in{
-        margin-top: 3%;
-    }
-    #MFecha_in, #MMotivo_in, #MMonto_in, #MCuenta_in{
-        margin-left: 15%;
-        width: 100%;
-    }
- 
+
 }
 
 @media screen and (max-width:950px) and (min-width:760px){
+/*----------------Fuentes----------------*/
+@font-face{
+    font-family: "PresideBold";
+    src: url(../fonts/PresideBold.ttf);
+}
+@font-face{
+    font-family: "Anisha";
+    src: url(../fonts/Anisha.otf);
+}
 /*-----------------Cuerpo-----------------*/
 body{
     font-family: "Century Gothic";
-    background-image: url(../img/6.jpeg);
+    background-image: url(../img/2.jpeg);
     background-attachment: fixed;
     background-size: cover;
     width: 100%;
@@ -288,7 +212,7 @@ nav ul li:hover a:before{
 /*-----------------Contenedor-----------------*/
 .contenedor{
    /* background-color: rgba(0,0,0,0.8);*/
-    background-color: rgba(237, 214, 146, 0.9);
+    background-color: rgba(237, 214, 146, 0.7);
     width: 40%;
     display: block;
     margin: auto;
@@ -301,10 +225,9 @@ nav ul li:hover a:before{
     padding: 15px;
     box-sizing: border-box;
 }
-.contenido h1{
+.contenido h2{
     text-align: center;
     margin-bottom: 5%;
-    font-size: 2em;
 }
 .inn{
     padding: 8px;
@@ -330,17 +253,27 @@ nav ul li:hover a:before{
     background-color: rgba(48, 114, 237, 0.7);
 
 }
-#mostrar{
-    display: none;
-}
-
+    #mostrar{
+        display: none;
+    }
+   
+  
 }
 
 @media screen and (max-width:760px) and (min-width:550px){
+ /*----------------Fuentes----------------*/
+@font-face{
+    font-family: "PresideBold";
+    src: url(../fonts/PresideBold.ttf);
+}
+@font-face{
+    font-family: "Anisha";
+    src: url(../fonts/Anisha.otf);
+}
 /*-----------------Cuerpo-----------------*/
 body{
     font-family: "Century Gothic";
-    background-image: url(../img/6.jpeg);
+    background-image: url(../img/2.jpeg);
     background-attachment: fixed;
     background-size: cover;
     width: 100%;
@@ -408,7 +341,7 @@ nav ul li:hover a:before{
 /*-----------------Contenedor-----------------*/
 .contenedor{
    /* background-color: rgba(0,0,0,0.8);*/
-    background-color: rgba(237, 214, 146, 0.9);
+    background-color: rgba(237, 214, 146, 0.7);
     width: 50%;
     display: block;
     margin: auto;
@@ -421,10 +354,9 @@ nav ul li:hover a:before{
     padding: 15px;
     box-sizing: border-box;
 }
-.contenido h1{
+.contenido h2{
     text-align: center;
     margin-bottom: 5%;
-    font-size: 2em;
 }
 .inn{
     padding: 8px;
@@ -450,17 +382,27 @@ nav ul li:hover a:before{
     background-color: rgba(48, 114, 237, 0.7);
 
 }
-#mostrar{
-    display: none;
-}
-
+    #mostrar{
+        display: none;
+    }
+   
 }
 
 @media screen and (max-width:550px) and (min-width:10px){
+    
+/*----------------Fuentes----------------*/
+@font-face{
+    font-family: "PresideBold";
+    src: url(../fonts/PresideBold.ttf);
+}
+@font-face{
+    font-family: "Anisha";
+    src: url(../fonts/Anisha.otf);
+}
 /*-----------------Cuerpo-----------------*/
 body{
     font-family: "Century Gothic";
-    background-image: url(../img/5.jpeg);
+    background-image: url(../img/2.jpeg);
     background-attachment: fixed;
     background-size: cover;
     width: 100%;
@@ -510,11 +452,11 @@ nav ul li a{
 /*-----------------Contenedor-----------------*/
 .contenedor{
    /* background-color: rgba(0,0,0,0.8);*/
-    background-color: rgba(237, 214, 146, 0.9);
+    background-color: rgba(237, 214, 146, 0.7);
     width: 90%;
     display: block;
     margin: auto;
-    margin-top: 22%;
+    margin-top:22%;
     padding: 15px;
     box-sizing: border-box;
     margin-bottom: 15%;
@@ -524,10 +466,9 @@ nav ul li a{
     padding: 15px;
     box-sizing: border-box;
 }
-.contenido h1{
+.contenido h2{
     text-align: center;
     margin-bottom: 5%;
-    font-size: 2em;
 }
 .inn{
     padding: 8px;
@@ -553,88 +494,15 @@ nav ul li a{
     background-color: rgba(48, 114, 237, 0.7);
 
 }
-
-
+    
+.oculto{
+    display: none; 
+}
 #mostrar{
     box-sizing: border-box;
-    }
-/*----------------------Mostrar Info----------------------*/
-#popup {
-   visibility: hidden;
-   opacity: 0;
-   margin-top: -300px;
 }
-#popup:target {
-   visibility:visible;
-   opacity: 1;
-   background-color: rgba(0,0,0,0.8);
-   position: fixed;
-   top:0;
-   left:0;
-   right:0;
-   bottom:0;
-   margin:0;
-   z-index: 999;
-   transition:all 1s;
-}
-.popup-contenedor {
-   float: left;
-   position: relative;
-   margin:7% auto;
-   padding:30px 50px;
-   background-color: #D4DBC8;
-   color:#333;
-   border-radius: 3px;
-   width:62%;
-   margin-left: 6%;
-   
-}
-a.popup-cerrar {
-   position: absolute;
-   top:3px;
-   right:3px;
-   background-color: #333;
-   padding:7px 10px;
-   font-size: 20px;
-   text-decoration: none;
-   line-height: 1;
-   color:#fff;
-}
-.informacion{
-    text-decoration: none;
-    background-color: #66BB6A;
-    border: none;
-    padding: 8px;
-    font-size: 1em;
-    color: #fff;
-    transition: 0.5s ease-out;
     
-    }
-    .modal-info{
-        position: relative;
-        float: left;
-        width: 100%;
-        padding: 5px;
-        box-sizing: border-box;
-        
-    }
-    .MInfoing{
-        float: left;
-        width: 100%;
-        padding: 5px;
-        box-sizing: border-box;
-        background-color: #E7E7DE;
-        height: 180px;
-    }
-        .MInfoing h2{
-            text-align: center;
-            background-color: #00587A;
-            padding: 5px;
-            box-sizing: border-box;
-            color: #fff;
-            margin-bottom: 2%;
-        }
-    
+}
 
-}
+
 

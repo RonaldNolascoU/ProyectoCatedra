@@ -7,7 +7,31 @@ function cuentas() {
     if (localStorage.getItem("dinero_incio") == null) {
         document.getElementById("mostrar-efectivo").innerHTML = "No posee efectivo";
     }else{
-    document.getElementById("mostrar-efectivo").innerHTML = "Efectivo: $ " + localStorage.dinero_incio;
+        var GetValor = localStorage.getItem("dinero_incio");
+
+
+            //Convertir a arreglo
+            var NuevoValor = GetValor.substring(1, GetValor.length - 1);  //Elimina los []
+
+            var arregloDinero = NuevoValor.split(",");
+
+
+            for (j = 0; j <= arregloDinero.length - 1; j++) {
+                if (arregloDinero[j] == "\"\"") { //si es comilla doble
+                    arregloDinero[j] = "";
+                    if (arrayefectivo[j] == "") {
+                        arrayefectivo[j] = "";
+                    }
+                } else {
+                    var DineroSplit = arregloDinero[j].split("\"");
+
+                    arregloDinero[j] = DineroSplit[1];
+
+                    arrayefectivo[j] = DineroSplit[1];
+                }
+            }
+                 var online = localStorage.getItem("user_activo");
+    document.getElementById("mostrar-efectivo").innerHTML = "Efectivo: $ " + arrayefectivo[online];
     }
     //Regex
     var rgx_efectivo = /^\d*$/;
@@ -104,11 +128,51 @@ function cuentas() {
 
         //Cuentas
         if (localStorage.getItem("banco_incio") == null) {
-            document.getElementById("MBanco_c").innerHTML = "No posee cuentas"
+            document.getElementById("MBanco_c").innerHTML = "No posse cuentas"
         } else {
-            document.getElementById("MBanco_c").innerHTML = "Banco: " + localStorage.banco_incio;
-            document.getElementById("MCuenta_c").innerHTML = "Cuenta: " +localStorage.cuenta_incio;
-            document.getElementById("MSaldo_c").innerHTML = "Saldo: $" + localStorage.saldo_incio;
+            var GetValor = localStorage.getItem("dinero_incio");
+            var GetValor2 = localStorage.getItem("banco_incio");
+            var GetValor3 = localStorage.getItem("cuenta_incio");
+            var GetValor4 = localStorage.getItem("saldo_incio");
+
+            //Convertir a arreglo
+            var NuevoValor = GetValor.substring(1, GetValor.length - 1); //Elimina los []
+            var NuevoValor2 = GetValor2.substring(1, GetValor2.length - 1); //Elimina los []
+            var NuevoValor3 = GetValor3.substring(1, GetValor3.length - 1); //Elimina los []
+            var NuevoValor4 = GetValor4.substring(1, GetValor4.length - 1); //Elimina los []
+
+            var arregloDinero = NuevoValor.split(",");
+            var arregloBanco = NuevoValor2.split(",");
+            var arregloCuenta = NuevoValor3.split(",");
+            var arregloSaldo = NuevoValor4.split(",");
+
+            for (j = 0; j <= arregloDinero.length - 1; j++) {
+                if (arregloDinero[j] == "\"\"") { //si es comilla doble
+                    arregloDinero[j] = "";
+                    if (arrayefectivo[j] == "") {
+                        arrayefectivo[j] = "";
+                        arraybanco[j] = "";
+                        arraycuenta[j] = "";
+                        arraysaldo[j] = "";
+                    }
+                } else {
+                    var DineroSplit = arregloDinero[j].split("\"");
+                    var BancoSplit = arregloBanco[j].split("\"");
+                    var CuentaSplit = arregloCuenta[j].split("\"");
+                    var SaldoSplit = arregloSaldo[j].split("\"");
+
+                    arregloDinero[j] = DineroSplit[1];
+
+                    arrayefectivo[j] = DineroSplit[1];
+                    arraybanco[j] = BancoSplit[1];
+                    arraycuenta[j] = CuentaSplit[1];
+                    arraysaldo[j] = SaldoSplit[1];
+                }
+            }
+                 var online = localStorage.getItem("user_activo");
+            document.getElementById("MBanco_c").innerHTML = "Banco: " + arraybanco[online];
+            document.getElementById("MCuenta_c").innerHTML = "Cuenta: " + arraycuenta[online];
+            document.getElementById("MSaldo_c").innerHTML = "Saldo: $" + arraysaldo[online];
         }
         //Tarjetas
         if (localStorage.getItem("tarjeta_banco") == null) {
